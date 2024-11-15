@@ -11,14 +11,18 @@
 		53A9163E2CE72012007741B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A9163D2CE72012007741B2 /* ContentView.swift */; };
 		53A916402CE72014007741B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A9163F2CE72014007741B2 /* Assets.xcassets */; };
 		53A916432CE72014007741B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A916422CE72014007741B2 /* Preview Assets.xcassets */; };
+		AD7A623AF4CDD7D167A26CC0 /* Pods_MathGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3542D5AA05D9EEB885E2B4EA /* Pods_MathGame.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3542D5AA05D9EEB885E2B4EA /* Pods_MathGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A916382CE72012007741B2 /* MathGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A9163B2CE72012007741B2 /* MathGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathGameApp.swift; sourceTree = "<group>"; };
 		53A9163D2CE72012007741B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		53A9163F2CE72014007741B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53A916422CE72014007741B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		56A2128C77D38A8C01CA12A3 /* Pods-MathGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathGame.release.xcconfig"; path = "Target Support Files/Pods-MathGame/Pods-MathGame.release.xcconfig"; sourceTree = "<group>"; };
+		6D2AC973E2779B351C46F55B /* Pods-MathGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathGame.debug.xcconfig"; path = "Target Support Files/Pods-MathGame/Pods-MathGame.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +30,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD7A623AF4CDD7D167A26CC0 /* Pods_MathGame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BE4CF3CBBE241F14A69092C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3542D5AA05D9EEB885E2B4EA /* Pods_MathGame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		53A9162F2CE72012007741B2 = {
 			isa = PBXGroup;
 			children = (
 				53A9163A2CE72012007741B2 /* MathGame */,
 				53A916392CE72012007741B2 /* Products */,
+				E663F6AFFB05A2681BA62036 /* Pods */,
+				2BE4CF3CBBE241F14A69092C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E663F6AFFB05A2681BA62036 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D2AC973E2779B351C46F55B /* Pods-MathGame.debug.xcconfig */,
+				56A2128C77D38A8C01CA12A3 /* Pods-MathGame.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53A916462CE72014007741B2 /* Build configuration list for PBXNativeTarget "MathGame" */;
 			buildPhases = (
+				D909758B1B02AEC7A77EADAF /* [CP] Check Pods Manifest.lock */,
 				53A916342CE72012007741B2 /* Sources */,
 				53A916352CE72012007741B2 /* Frameworks */,
 				53A916362CE72012007741B2 /* Resources */,
+				D4357095D292A5C5B49DF39D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D4357095D292A5C5B49DF39D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MathGame/Pods-MathGame-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MathGame/Pods-MathGame-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MathGame/Pods-MathGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D909758B1B02AEC7A77EADAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MathGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		53A916342CE72012007741B2 /* Sources */ = {
@@ -266,6 +335,7 @@
 		};
 		53A916472CE72014007741B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D2AC973E2779B351C46F55B /* Pods-MathGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +365,7 @@
 		};
 		53A916482CE72014007741B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56A2128C77D38A8C01CA12A3 /* Pods-MathGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
